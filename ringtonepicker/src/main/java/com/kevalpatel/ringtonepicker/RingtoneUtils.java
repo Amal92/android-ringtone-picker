@@ -216,7 +216,7 @@ public final class RingtoneUtils {
      * @return True if the read permission granted or else false.
      */
     static boolean checkForStorageReadPermission(@NonNull final Context context) {
-        return ActivityCompat.checkSelfPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+        return ActivityCompat.checkSelfPermission(context, Manifest.permission.READ_EXTERNAL_STORAGE)
                 == PackageManager.PERMISSION_GRANTED;
     }
 }
